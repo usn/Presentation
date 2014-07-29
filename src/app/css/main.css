@@ -1,0 +1,267 @@
+
+/*Global styles -----------------------------------------------------------------------------------------------------------*/
+
+/*limited resett*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+/*html5 display rulee*/
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary { display: block; }
+
+a { text-decoration: none; }
+
+a:hover { color: #000; }
+
+a img { border: none; outline: 0; }
+
+body {
+    background-color: #fff;
+    color: rgb(76, 67, 65);
+    font: 100% Cantarell, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.8;
+}
+
+/*Header Styles*/
+
+header {
+    background-color: rgb(150,35,25);
+    height: 100px;
+    margin-bottom: 1em;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+header a.logo {
+    background: url('../img/sapient-logo.png') no-repeat;
+    display: block;
+    float: left;
+    height: 68px;
+    margin: 10px 30px 0 40px;
+    width: 68px;
+}
+
+header  a { color: #fff; }
+
+/*Nav Styles*/
+header nav li { float: left; list-style: none; padding-right: 20px; }
+
+
+/*form styles*/
+
+fieldset { border: none; padding: 0; }
+
+
+label { display: block; font-size: 1em; margin: .8em 0 0; }
+
+#frmcontact #business {
+    background-color: #EAEAEA;
+    border: 1px solid gray;
+    margin: 2% 3% 0 0;
+    padding-left: 3%;
+}
+
+input { display: block; }
+
+input[type="submit"] { margin: 1em 0; }
+
+#tree input { display: inline; }
+
+
+
+#tree ul li { padding-left: 30px; }
+
+.inline { display: inline; }
+
+/*Content*/
+
+#content { margin-left: 10px; }
+#content #infocontact { margin-bottom: 1em; }
+
+/* contact*/
+
+#contact h2 { font-size: 1.2em; }
+
+#contact ul { list-style: none; }
+
+#contact #login { margin-bottom: 1em; }
+
+/*mobile styles*/
+
+@media only screen and (max-width:480px) {
+    
+    
+    body { max-width: 480px; min-width: 320px; }
+    
+    /*header styles*/
+    header { height: auto; }
+    
+    header a.logo { margin: 10px 30% 2% 8%; }
+    /*Nav styles*/
+    #mainNav { clear: both; float: none; position: relative; }
+    
+    #mainNav li { float: none; }
+    
+    .topMenu { max-height: 0; visibility: hidden; }
+    
+    .expand { margin: 0 0 0 10%; max-height: 900em; visibility: visible; }
+    
+    
+    /*form*/
+    
+    #login input {
+        border: 1px solid #CCC;
+        border-radius: 5px;
+        margin-bottom: 1.5em;
+        outline: medium none;
+        padding: 8px;
+        width: 100%;
+    }
+    
+    
+    #business h2 { font-size: 1.4em; }
+    
+    #submit { clear: both; }
+}
+
+/*tablet*/
+@media only screen and (min-width:481px) and (max-width:768px) {
+    body {
+        margin: 0 auto;
+        max-width: 768px;
+        min-width: 600px;
+        width: 100%;
+    }
+    
+    #mainNav { float: right; margin-right: 15px; margin-top: 15px; }
+    
+    /*form*/
+    
+    #login { float: left; width: 45%; }
+    #login input {
+        border: 1px solid #CCC;
+        border-radius: 5px;
+        margin-bottom: 1.5em;
+        outline: medium none;
+        padding: 8px;
+        width: 100%;
+    }
+    
+    #business { float: right; margin-top: 20px; width: 40%; }
+    
+    #business h2 { font-size: 1.4em; }
+    #submit { clear: both; }
+    
+    
+    
+}
+
+/*desktop*/
+@media only screen and (min-width:769px) {
+    
+    body { margin: 0 auto; min-width: 1024px; width: 100%; }
+    
+    header { height: auto; width: 100%; }
+    
+    header a.logo { margin: 10px 30% 2% 8%; }
+    
+    #mainNav { float: right; margin: 15px 7.5% 0 0; }
+    
+    
+    #business h2 { font-size: 3em; }
+    
+    #content { clear: both; margin: 0 auto; width: 85%; }
+    
+    #content h1 { border-bottom: 1px solid #000; margin-bottom: 0.2em; }
+    
+    article { float: right; width: 70%; }
+    
+    aside { float: left; width: 28%; }
+    
+    #pagefooter { clear: both; overflow: hidden; }
+    
+    /*form*/
+    #login { float: left; width: 45%; }
+    
+    #login input {
+        border: 1px solid #CCC;
+        border-radius: 5px;
+        margin-bottom: 1.5em;
+        outline: medium none;
+        padding: 8px;
+        width: 100%;
+    }
+    
+    #business { float: right; margin-top: 20px; width: 40%; }
+    
+    #business h2 { font-size: 1.4em; }
+    #submit { clear: both; }
+}
+
+/*Photo_Gallery*/
+
+.marquee_panels { display: none; }
+.marquee_container {
+    background-color: #000;
+    height: 250px;
+    margin: 0 0 30px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 250px;
+}
+.marquee_photos { left: 0; position: absolute; top: 0; }
+.marquee_caption {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial;
+    font-size: .75em;
+    left: 0;
+    margin: 0;
+    opacity: .7;
+    padding: 0 0 0 0;
+    position: absolute;
+    top: 10px;
+    width: 250px;
+}
+.marquee_caption_content { padding: 0 0 0 5px; width: 250px; }
+.marquee_caption h2 {
+    color: #fff;
+    font-size: 1.25em;
+    font-weight: normal;
+    margin: 0;
+    text-transform: uppercase;
+}
+.marquee_caption p { color: #fff; margin: 0 0 5px 0; }
+.marquee_caption a { color: #CCC; }
+.marquee_caption a:hover { color: #fff; }
+.marquee_flag { float: left; margin-right: 10px; }
+
+.marquee_nav {
+    background-color: #000;
+    height: 35px;
+    position: absolute;
+    text-align: right;
+    top: 220px;
+    width: 250px;
+}
+.marquee_nav a {
+    background-color: red;
+    cursor: pointer;
+    display: inline-block;
+    height: 22px;
+    margin-right: 15px;
+    margin-top: 3px;
+    text-align: center;
+    width: 18px;
+}
+
+
+.marquee_nav a:hover { background-color: #090; }
+.marquee_nav a.selected { background-color: #F60; }
