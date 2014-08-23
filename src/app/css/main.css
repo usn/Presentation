@@ -14,7 +14,12 @@ address, article, aside, canvas, details, figcaption, figure, footer, header, hg
 
 a { text-decoration: none; }
 
+a:active,
 a:hover { color: #000; }
+
+a:focus {
+    outline: #3389a9 solid 2px;
+}
 
 a img { border: none; outline: 0; }
 
@@ -38,20 +43,28 @@ header {
     width: 100%;
 }
 
-header a.logo {
-    background: url('../img/sapient-logo.png') no-repeat;
+#site-title  a {
     display: block;
+    text-indent: -9999px;
     float: left;
-    height: 68px;
+    height: 75px;
     margin: 10px 30px 0 40px;
     width: 68px;
+    background: url('../img/sapient-logo.png') no-repeat;
+    border: none;
 }
 
 header  a { color: #fff; }
 
 /*Nav Styles*/
 header nav li { float: left; list-style: none; padding-right: 20px; }
+/*#mainNav { border: 1px solid green;}*/
 
+.section-heading,
+.skip-link {
+    position: absolute;
+    text-indent: -9999px;
+}
 
 /*form styles*/
 
@@ -101,8 +114,10 @@ input[type="submit"] { margin: 1em 0; }
     
     /*header styles*/
     header { height: auto; }
-    
-    header a.logo { margin: 10px 30% 2% 8%; }
+
+    #site-title a{
+    margin: 10px 30% 2% 8%;
+}
     /*Nav styles*/
     #mainNav { clear: both; float: none; position: relative; }
     
@@ -169,7 +184,9 @@ input[type="submit"] { margin: 1em 0; }
     
     header { height: auto; width: 100%; }
     
-    header a.logo { margin: 10px 30% 2% 8%; }
+    #site-title a{
+    margin: 10px 30% 2% 8%;
+}
     
     #mainNav { float: right; margin: 15px 7.5% 0 0; }
     
